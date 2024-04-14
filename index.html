@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMobile</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="js/init.js" defer></script>
+    <script src="js/inventory.js" defer></script>
+    <script src="js/login.js" defer></script>
+    <script src="js/cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>TechMobile</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" id="login">Login</a></li>
+                <li><a href="javascript:void(0);" id="cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="carousel">
+        <!-- Dynamic slider with placeholder images -->
+        <div class="slide active">
+            <img src="https://via.placeholder.com/640x360.png?text=Brand+1" alt="Brand 1">
+        </div>
+        <div class="slide">
+            <img src="https://via.placeholder.com/640x360.png?text=Brand+2" alt="Brand 2">
+        </div>
+        <div class="slide">
+            <img src="https://via.placeholder.com/640x360.png?text=Brand+3" alt="Brand 3">
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <footer>
+        <p>Contact us: <a href="mailto:info@techmobile.com">info@techmobile.com</a></p>
+        <p>Follow us on social media for updates.</p>
+    </footer>
+</body>
+</html>

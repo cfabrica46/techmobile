@@ -1,0 +1,56 @@
+{
+    "users": [
+      {"username": "user1", "password": "pass1", "email": "user1@example.com"},
+      {"username": "user2", "password": "pass2", "email": "user2@example.com"},
+      {"username": "user3", "password": "pass3", "email": "user3@example.com"}
+    ],
+    "inventory": [
+      {
+        "brand": "Samsung",
+        "models": [
+          {
+            "model": "Galaxy S21", 
+            "components": {
+              "CPU": "Exynos 2100", 
+              "RAM": "LPDDR5 8GB", 
+              "Storage": "UFS 3.1 128GB", 
+              "Battery": "Model 4000mAh - Li-Ion"
+            }
+          },
+          {
+            "model": "Galaxy S21+", 
+            "components": {
+              "CPU": "Exynos 2100", 
+              "RAM": "LPDDR5 8GB", 
+              "Storage": "UFS 3.1 256GB", 
+              "Battery": "Model 4800mAh - Li-Ion"
+            }
+          }
+        ]
+      },
+      {
+        "brand": "Apple",
+        "models": [
+          {
+            "model": "iPhone 12", 
+            "components": {
+              "CPU": "A14 Bionic", 
+              "RAM": "LPDDR4X 4GB", 
+              "Storage": "NVMe 64GB", 
+              "Battery": "Model 2815mAh - Li-Ion"
+            }
+          },
+          {
+            "model": "iPhone 12 Pro", 
+            "components": {
+              "CPU": "A14 Bionic", 
+              "RAM": "LPDDR4X 6GB", 
+              "Storage": "NVMe 128GB", 
+              "Battery": "Model 2815mAh - Li-Po"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
