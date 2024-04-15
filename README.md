@@ -1,6 +1,7 @@
 # TechMobile 📱🌐
 
 ## Propósito del Proyecto
+
 Este proyecto ha sido desarrollado como parte del curso de taller web. **TechMobile** es una plataforma en línea destinada a proporcionar detalles técnicos exhaustivos sobre diversos modelos de teléfonos celulares. Nuestro objetivo es ofrecer a los usuarios la capacidad de explorar especificaciones detalladas de diferentes marcas y modelos para mejorar su experiencia de compra y conocimiento técnico.
 
 ## Estructura de Carpetas 📁
@@ -49,7 +50,18 @@ Para ejecutar este proyecto localmente, puedes seguir estos pasos:
 
 ¡Y eso es todo! Ahora deberías poder ver y interactuar con el proyecto TechMobile en tu navegador local.
 
+### Python
+
+```
+python -m http.server 8080
+```
+
+### Node
+
+```
+http-server -p 3000
+```
+
 ---
 
 Esperamos que este proyecto te proporcione una excelente experiencia de aprendizaje y desarrollo en el ámbito del diseño y programación web. ¡Gracias por visitar y utilizar TechMobile!
-
