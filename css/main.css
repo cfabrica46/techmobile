@@ -7,17 +7,70 @@ body {
     color: #333;
 }
 
-header, footer {
-    background-color: #62a7cc;
-    color: white;
+/* head */
+header {
+    background-color: #D3B8FF; /* Color de fondo morado claro */
     padding: 20px;
-    text-align: center;
+    text-align: center; /* Centra el contenido */
+    position: relative; /* Permite posicionar los iconos absolutamente */
 }
 
-header h1 {
-    margin: 0;
-    font-weight: 700;
+.container-title {
+    display: flex; /* Utiliza flexbox para colocar el título y el logo lado a lado */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
 }
+
+h1 {
+    color: #4B0082; /* Color del título */
+    font-family: Arial, sans-serif; /* Fuente del título */
+    font-size: 70px; /* Tamaño del título */
+    margin: 0; /* Quita el margen del título */
+}
+
+.logo {
+    width: 100px; /* Ancho del logo */
+    height: auto; /* Altura ajustada automáticamente */
+    margin-left: 10px; /* Espacio entre el título y el logo */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Posición absoluta para los iconos */
+    top: 50%; /* Coloca los iconos en la mitad superior del header */
+    right: 20px; /* Margen derecho para los iconos */
+    transform: translateY(-50%); /* Centra verticalmente los iconos */
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 10px; /* Espacio entre los iconos */
+}
+
+ul li a {
+    color: #4B0082; /* Color de los iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+    text-decoration: none;
+    transition: color 0.3s; /* Transición en el cambio de color */
+}
+
+ul li a:hover {
+    color: yellow
+}
+
+
+/* carrousel */
+
+.welcome-message {
+    color: #4B0082; /* Color del texto */
+    font-size: 32px; /* Tamaño de la fuente */
+    font-family: Arial, sans-serif; /* Fuente */
+    text-align: center; /* Alineación del texto */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
 
 nav ul {
     list-style-type: none;
@@ -30,6 +83,8 @@ nav ul li {
 }
 
 .carousel {
+    border: solid 3px #4B0082;
+    border-radius: 25px;
     position: relative;
     max-width: 640px;
     margin: 20px auto;
@@ -46,8 +101,8 @@ nav ul li {
 }
 
 .carousel img {
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
 }
 
 .prev, .next {
@@ -65,6 +120,10 @@ nav ul li {
     user-select: none;
 }
 
+.arrow {
+    color: #4B0082;
+}
+
 .prev {
     left: 0;
     border-radius: 3px 0 0 3px;
@@ -77,11 +136,122 @@ nav ul li {
 
 .prev:hover, .next:hover {
     background-color: #f1f1f1;
-    color: #333;
+    color: #b373e0; /* Cambio de color al hacer hover */
 }
 
+.carousel-image {
+    max-width: 550px;
+    max-height: 360px;
+    width: auto;
+    height: 360px;
+    margin: auto; /* Centrar horizontalmente */
+    display: block; /* Para asegurar el centrado horizontal */
+    object-fit: contain; /* Mantener la proporción de la imagen */
+}
+
+/* footer */
+
 footer {
+    background-color: #D3B8FF; /* Color de fondo morado claro */
+    color: #4B0082; /* Color del texto */
+    padding: 50px; /* Espaciado interno */
+
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.social-media,
+.quick-links,
+.newsletter {
+    flex: 1 1 300px; /* Establece el ancho mínimo y máximo */
+    margin-bottom: 30px;
+}
+
+.contact-info h3,
+.social-media h3,
+.quick-links h3,
+.newsletter h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff; /* Línea inferior */
+    padding-bottom: 10px;
+}
+
+.contact-info p,
+.social-media ul,
+.quick-links ul {
+    margin-bottom: 10px;
+}
+
+.contact-info a,
+.social-media a,
+.quick-links a,
+.newsletter {
+    text-decoration: none;
+    color: #4B0082; /* Color del texto */
+    transition: color 0.3s; /* Transición en el cambio de color */
+}
+
+.contact-info a:hover,
+.social-media a:hover,
+.quick-links a:hover,
+.newsletter a:hover {
+    color: yellow; /* Cambio de color al hacer hover */
+}
+
+.social-media ul li {
+    margin-bottom: 5px;
+}
+
+.social-media ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media ul li a:hover {
+    color: #ff0; /* Cambio de color al hacer hover */
+}
+
+.quick-links ul li {
+    margin-bottom: 5px;
+}
+
+.quick-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.quick-links ul li a:hover {
+    color: #ff0; /* Cambio de color al hacer hover */
+}
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
     padding: 10px;
-    position: static;
-    text-align: center;
+    flex: 1;
+    margin-right: 10px;
+    border: none;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #ff0; /* Color de fondo amarillo */
+    border: none;
+    color: #333; /* Color del texto */
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #f90; /* Cambio de color al hacer hover */
 }

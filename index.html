@@ -6,6 +6,8 @@
     <title>TechMobile</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
 
     <script src="js/init.js" defer></script>
     <script src="js/inventory.js" defer></script>
@@ -14,33 +16,57 @@
 </head>
 <body>
     <header>
-        <h1>TechMobile</h1>
-        <nav>
+            <div class="container-title">
+                <h1>TechMobile</h1>
+                <img class="logo" src="https://img.freepik.com/vector-premium/smartphone-logo-comunicacion-electronica-vector-diseno-telefono-moderno-simbolo-marca-empresa_638875-2350.jpg">
+            </div>
             <ul>
-                <li><a href="javascript:void(0);" id="login">Login</a></li>
-                <li><a href="javascript:void(0);" id="cart">Cart</a></li>
+                <li><a href="javascript:void(0);" id="login"><i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="javascript:void(0);" id="cart"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
-        </nav>
     </header>
 
+    <h2 class="welcome-message">Welcome to TechMobile</h2>
+
     <div class="carousel">
-        <!-- Dynamic slider with placeholder images -->
-        <div class="slide active">
-            <img src="https://via.placeholder.com/640x360.png?text=Brand+1" alt="Brand 1">
-        </div>
-        <div class="slide">
-            <img src="https://via.placeholder.com/640x360.png?text=Brand+2" alt="Brand 2">
-        </div>
-        <div class="slide">
-            <img src="https://via.placeholder.com/640x360.png?text=Brand+3" alt="Brand 3">
-        </div>
-        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        <a class="prev arrow" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next arrow" onclick="changeSlide(1)">&#10095;</a>
     </div>
 
     <footer>
-        <p>Contact us: <a href="mailto:info@techmobile.com">info@techmobile.com</a></p>
-        <p>Follow us on social media for updates.</p>
+        <div class="footer-info">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Av San Luis, Lima, Peru</p>
+                <p><i class="fas fa-phone"></i> +51 938 536 234</p>
+                <p><i class="fas fa-envelope"></i> techmobile@company.pe</p>
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                    <p><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></p>
+                    <p><a href="#"><i class="fab fa-twitter"></i> Twitter</a></p>
+                    <p><a href="#"><i class="fab fa-instagram"></i> Instagram</a></p>
+                    <p><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></p>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                    <p><a href="#">About Us</a></p>
+                    <p><a href="#">Products</a></p>
+                    <p><a href="#">Services</a></p>
+                    <p><a href="#">Contact Us</a></p>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form>
+                    <input type="email" name="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 TechMobile. All rights reserved.</p>
+        </div>
     </footer>
+
 </body>
 </html>
