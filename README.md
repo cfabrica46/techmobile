@@ -1,5 +1,13 @@
 # TechMobile 📱🌐
 
+# Vista Preliminar de la Página Web 🖥️
+
+En esta sección, ofrecemos una vista preliminar de algunas de las principales interfaces de nuestro proyecto TechMobile. Estas imágenes te darán una idea de cómo es la experiencia del usuario y el diseño general de nuestra plataforma.
+
+### Página Principal
+
+![Página Principal](./assets/images/preliminar.png)
+
 ## Propósito del Proyecto
 
 Este proyecto ha sido desarrollado como parte del curso de taller web. **TechMobile** es una plataforma en línea destinada a proporcionar detalles técnicos exhaustivos sobre diversos modelos de teléfonos celulares. Nuestro objetivo es ofrecer a los usuarios la capacidad de explorar especificaciones detalladas de diferentes marcas y modelos para mejorar su experiencia de compra y conocimiento técnico.
