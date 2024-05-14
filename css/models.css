@@ -44,13 +44,14 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: calc(33.333% - 40px);
+    width: 300px; /* Ancho fijo para los contenedores de los modelos */
     background-color: #fff;
 }
 
 .model img {
     max-width: 100%;
-    height: auto;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajustar la imagen para cubrir el área */
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -221,4 +222,3 @@ footer {
 .newsletter button:hover {
     background-color: #f90;
 }
-
