@@ -19,6 +19,7 @@ header {
     display: flex; /* Utiliza flexbox para colocar el título y el logo lado a lado */
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Centra los elementos verticalmente */
+    position: relative; /* Permite posicionar los iconos absolutamente */
 }
 
 h1 {
@@ -49,6 +50,17 @@ ul li {
     margin-left: 10px; /* Espacio entre los iconos */
 }
 
+.home-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Posición absoluta para los iconos */
+    top: 50%; /* Coloca los iconos en la mitad superior del header */
+    left: 20px; /* Margen derecho para los iconos */
+    right: unset;
+    transform: translateY(-50%); /* Centra verticalmente los iconos */
+}
+
 ul li a {
     color: #4B0082; /* Color de los iconos */
     font-size: 24px; /* Tamaño de los iconos */
@@ -57,29 +69,56 @@ ul li a {
 }
 
 ul li a:hover {
-    color: yellow
+    color: yellow;
 }
 
+.home-icon {
+    color: #4B0082; /* Color de los iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+    text-decoration: none;
+    transition: color 0.3s; /* Transición en el cambio de color */
+    left: 30px;
+}
+
+.home-icon:hover {
+    color: yellow;
+}
+
+/* Barra de navegación */
+
+.nav-links {
+    top:20px;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #4B0082; /* Color del texto blanco */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: yellow; /* Color de texto al hacer hover */
+}
 
 /* carrousel */
-
 .welcome-message {
     color: #4B0082; /* Color del texto */
     font-size: 32px; /* Tamaño de la fuente */
     font-family: Arial, sans-serif; /* Fuente */
     text-align: center; /* Alineación del texto */
     margin-bottom: 20px; /* Margen inferior */
-}
-
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
 }
 
 .carousel {
@@ -101,8 +140,8 @@ nav ul li {
 }
 
 .carousel img {
-    /* width: 100%;
-    height: auto; */
+    width: 100%;
+    height: auto;
 }
 
 .prev, .next {
@@ -150,12 +189,10 @@ nav ul li {
 }
 
 /* footer */
-
 footer {
     background-color: #D3B8FF; /* Color de fondo morado claro */
     color: #4B0082; /* Color del texto */
     padding: 50px; /* Espaciado interno */
-
 }
 
 .footer-info {
@@ -254,4 +291,12 @@ footer {
 
 .newsletter button:hover {
     background-color: #f90; /* Cambio de color al hacer hover */
+}
+
+.content{
+    font-family: 'Courier New', Courier, monospace;
+
+    color:#333;
+    margin-left: 20px;
+    margin-right: 20px;
 }

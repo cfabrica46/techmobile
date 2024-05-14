@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechMobile</title>
+    <title>Services - TechMobile</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <script src="js/init.js" defer></script>
-    <script src="js/inventory.js" defer></script>
-    <script src="js/login.js" defer></script>
-    <script src="js/cart.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container-title">
+            <ul class="home-list">
+                <li>
+                    <a href="../index.html" class="home-icon">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+            </ul>
             <h1>TechMobile</h1>
             <img class="logo" src="https://img.freepik.com/vector-premium/smartphone-logo-comunicacion-electronica-vector-diseno-telefono-moderno-simbolo-marca-empresa_638875-2350.jpg">
             <ul>
@@ -24,12 +27,19 @@
         </div>
     </header>
 
-    <h2 class="welcome-message">Welcome to TechMobile</h2>
+<div class="carousel">
+    <div class="slide active">
+        <h2 class="welcome-message">Our Services</h2>
 
-    <div class="carousel">
-        <a class="prev arrow" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next arrow" onclick="changeSlide(1)">&#10095;</a>
+        <div class="content">
+            <p class="content">At TechMobile, we offer a range of services to ensure you get the most out of your mobile devices. Our services include:</p>
+                <p class="content">Technical Support: Our team is available to help you with any technical issues you may encounter.</p>
+                <p class="content">Repairs: We offer repair services for smartphones, including screen replacements, battery replacements, and more.</p>
+                <p class="content">Consultation: Need advice on which device to choose? Our experts are here to guide you.</p>
+            <p class="content">Our goal is to provide you with the best possible service to keep your devices running smoothly and efficiently. Contact us to learn more about how we can assist you.</p>
+        </div>
     </div>
+</div>
 
     <footer>
         <div class="footer-info">

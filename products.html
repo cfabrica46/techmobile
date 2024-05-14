@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechMobile</title>
+    <title>Products - TechMobile</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <script src="js/init.js" defer></script>
-    <script src="js/inventory.js" defer></script>
-    <script src="js/login.js" defer></script>
-    <script src="js/cart.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container-title">
+            <ul class="home-list">
+                <li>
+                    <a href="../index.html" class="home-icon">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+            </ul>
             <h1>TechMobile</h1>
             <img class="logo" src="https://img.freepik.com/vector-premium/smartphone-logo-comunicacion-electronica-vector-diseno-telefono-moderno-simbolo-marca-empresa_638875-2350.jpg">
             <ul>
@@ -24,12 +27,19 @@
         </div>
     </header>
 
-    <h2 class="welcome-message">Welcome to TechMobile</h2>
+<div class="carousel">
+    <div class="slide active">
+        <h2 class="welcome-message">Our Products</h2>
 
-    <div class="carousel">
-        <a class="prev arrow" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next arrow" onclick="changeSlide(1)">&#10095;</a>
+        <div class="content">
+            <p class="content">At TechMobile, we offer a wide range of smartphones and accessories to meet your needs. Our products are designed with the latest technology to provide you with the best experience possible.</p>
+                <p class="content">Smartphones: Discover our latest models with advanced features and sleek designs.</p>
+                <p class="content">Accessories: Explore our collection of phone cases, chargers, headphones, and more.</p>
+                <p class="content">Smart Devices: Enhance your lifestyle with our smartwatches and other connected devices.</p>
+            <p class="content">We are committed to providing high-quality products that combine performance, style, and affordability. Browse our product lineup to find the perfect tech for you.</p>
+        </div>
     </div>
+</div>
 
     <footer>
         <div class="footer-info">
