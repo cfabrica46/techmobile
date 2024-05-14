@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechMobile</title>
+    <title>ChatBot - TechMobile</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/chatbot.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <script src="js/init.js" defer></script>
-    <script src="js/inventory.js" defer></script>
-    <script src="js/login.js" defer></script>
-    <script src="js/cart.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container-title">
+            <ul class="home-list">
+                <li>
+                    <a href="index.html" class="home-icon">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+            </ul>
             <h1>TechMobile</h1>
             <img class="logo" src="https://img.freepik.com/vector-premium/smartphone-logo-comunicacion-electronica-vector-diseno-telefono-moderno-simbolo-marca-empresa_638875-2350.jpg">
             <ul>
@@ -24,52 +28,52 @@
         </div>
     </header>
 
-    <h2 class="welcome-message">Welcome to TechMobile</h2>
+    <div class="container">
+        <h2 class="welcome-message">ChatBot - TechMobile</h2>
 
-    <div class="carousel">
-        <a class="prev arrow" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next arrow" onclick="changeSlide(1)">&#10095;</a>
+        <div id="chatbot-container">
+            <div id="chatbot-body">
+                <div id="chatbot-messages"></div>
+            </div>
+            <div id="chatbot-input"></div>
+        </div>
     </div>
 
     <footer>
         <div class="footer-info">
             <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Av San Luis, Lima, Peru</p>
+                <h3>Información de Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Av San Luis, Lima, Perú</p>
                 <p><i class="fas fa-phone"></i> +51 938 536 234</p>
                 <p><i class="fas fa-envelope"></i> techmobile@company.pe</p>
             </div>
             <div class="social-media">
-                <h3>Follow Us</h3>
+                <h3>Síguenos</h3>
                 <p><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></p>
                 <p><a href="#"><i class="fab fa-twitter"></i> Twitter</a></p>
                 <p><a href="#"><i class="fab fa-instagram"></i> Instagram</a></p>
                 <p><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></p>
             </div>
             <div class="quick-links">
-                <h3>Quick Links</h3>
-                <p><a href="about-us.html">About Us</a></p>
-                <p><a href="products.html">Products</a></p>
-                <p><a href="services.html">Services</a></p>
-                <p><a href="contact-us.html">Contact Us</a></p>
+                <h3>Enlaces Rápidos</h3>
+                <p><a href="about-us.html">Sobre Nosotros</a></p>
+                <p><a href="products.html">Productos</a></p>
+                <p><a href="services.html">Servicios</a></p>
+                <p><a href="contact-us.html">Contáctanos</a></p>
             </div>
             <div class="newsletter">
-                <h3>Subscribe to Our Newsletter</h3>
+                <h3>Suscríbete a Nuestro Boletín</h3>
                 <form>
-                    <input type="email" name="email" placeholder="Your email address">
-                    <button type="submit">Subscribe</button>
+                    <input type="email" name="email" placeholder="Tu dirección de correo electrónico">
+                    <button type="submit">Suscribirse</button>
                 </form>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2024 TechMobile. All rights reserved.</p>
+            <p>&copy; 2024 TechMobile. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- Botón flotante para ChatBot -->
-    <a href="chatbot.html" id="chatbot-float-btn">
-        <i class="fas fa-comments"></i>
-    </a>
-
+    <script src="js/chatbot.js"></script>
 </body>
 </html>

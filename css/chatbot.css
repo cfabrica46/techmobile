@@ -1,0 +1,80 @@
+#chatbot-container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #4B0082;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    height: 600px; /* Tamaño fijo para el contenedor del chat */
+    display: flex;
+    flex-direction: column;
+}
+
+#chatbot-body {
+    padding: 10px;
+    overflow-y: auto;
+    flex: 1; /* Permitir que el cuerpo del chat ocupe todo el espacio disponible */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#chatbot-messages {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+#chatbot-input {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.chatbot-option {
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    flex: 1 1 45%;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+}
+
+.chatbot-option:hover {
+    background-color: #371a6f;
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.chatbot-message {
+    max-width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    word-wrap: break-word;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Animación de aparición */
+}
+
+.chatbot-message.user {
+    align-self: flex-end;
+    background-color: #d1e7dd; /* Color para mensajes del usuario */
+    color: #0f5132; /* Texto oscuro para contraste */
+}
+
+.chatbot-message.bot {
+    align-self: flex-start;
+    background-color: #d8bfd8; /* Color morado pastel para mensajes del bot */
+    color: #4B0082; /* Texto oscuro para contraste */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
