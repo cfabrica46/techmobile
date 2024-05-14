@@ -1,0 +1,224 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.header-container h1 {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    font-size: 48px; /* Tamaño del título */
+    margin: 0;
+}
+
+.home-icon {
+    position: absolute;
+    left: 50px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.models-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.model {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.333% - 40px);
+    background-color: #fff;
+}
+
+.model img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.model h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.model p {
+    margin: 5px 0;
+}
+
+/* Estilos específicos para cada marca */
+.brand-page.brand-samsung header,
+.brand-page.brand-samsung footer {
+    background-color: #ADD8E6; /* Azul pastel Samsung */
+    color: #1428a0;
+}
+
+.brand-page.brand-samsung h1 {
+    color: #1428a0; /* Azul Samsung */
+}
+
+.brand-page.brand-samsung .home-icon,
+.brand-page.brand-samsung .home-icon:hover {
+    color: #1428a0;
+}
+
+.brand-page.brand-samsung .model {
+    border-color: #1428a0;
+}
+
+.brand-page.brand-apple header,
+.brand-page.brand-apple footer {
+    background-color: #D3D3D3; /* Gris pastel Apple */
+    color: #000;
+}
+
+.brand-page.brand-apple h1 {
+    color: #000; /* Negro Apple */
+}
+
+.brand-page.brand-apple .home-icon,
+.brand-page.brand-apple .home-icon:hover {
+    color: #000;
+}
+
+.brand-page.brand-apple .model {
+    border-color: #000;
+}
+
+.brand-page.brand-xiaomi header,
+.brand-page.brand-xiaomi footer {
+    background-color: #FFDAB9; /* Naranja pastel Xiaomi */
+    color: #ff6900;
+}
+
+.brand-page.brand-xiaomi h1 {
+    color: #ff6900; /* Naranja Xiaomi */
+}
+
+.brand-page.brand-xiaomi .home-icon,
+.brand-page.brand-xiaomi .home-icon:hover {
+    color: #ff6900;
+}
+
+.brand-page.brand-xiaomi .model {
+    border-color: #ff6900;
+}
+
+.brand-page.brand-huawei header,
+.brand-page.brand-huawei footer {
+    background-color: #F08080; /* Rojo pastel Huawei */
+    color: #d82a26;
+}
+
+.brand-page.brand-huawei h1 {
+    color: #d82a26; /* Rojo Huawei */
+}
+
+.brand-page.brand-huawei .home-icon,
+.brand-page.brand-huawei .home-icon:hover {
+    color: #d82a26;
+}
+
+.brand-page.brand-huawei .model {
+    border-color: #d82a26;
+}
+
+/* Footer styles */
+footer {
+    padding: 50px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.social-media,
+.quick-links,
+.newsletter {
+    flex: 1 1 300px;
+    margin-bottom: 30px;
+}
+
+.contact-info h3,
+.social-media h3,
+.quick-links h3,
+.newsletter h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+.contact-info p,
+.social-media ul,
+.quick-links ul {
+    margin-bottom: 10px;
+}
+
+.contact-info a,
+.social-media a,
+.quick-links a,
+.newsletter {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover,
+.social-media a:hover,
+.quick-links a:hover,
+.newsletter a:hover {
+    color: yellow;
+}
+
+.social-media ul li {
+    margin-bottom: 5px;
+}
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    flex: 1;
+    margin-right: 10px;
+    border: none;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #f90;
+}
+

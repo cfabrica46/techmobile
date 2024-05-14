@@ -1,225 +1,245 @@
 {
   "users": [
-    {
-      "username": "user1",
-      "password": "pass1",
-      "email": "user1@example.com"
-    },
-    {
-      "username": "user2",
-      "password": "pass2",
-      "email": "user2@example.com"
-    },
-    {
-      "username": "user3",
-      "password": "pass3",
-      "email": "user3@example.com"
-    }
+      {
+          "username": "user1",
+          "password": "pass1",
+          "email": "user1@example.com"
+      },
+      {
+          "username": "user2",
+          "password": "pass2",
+          "email": "user2@example.com"
+      },
+      {
+          "username": "user3",
+          "password": "pass3",
+          "email": "user3@example.com"
+      }
   ],
   "inventory": [
-    {
-      "brand": "Samsung",
-      "logo_url": "https://turbologo.com/articles/wp-content/uploads/2019/07/samsung-logo-1993.jpg.webp",
-      "models": [
-        {
-          "model": "Samsung Galaxy S21 Ultra",
-          "components": {
-            "CPU": "Exynos 2100",
-            "RAM": "LPDDR5 12GB",
-            "Storage": "UFS 3.1 128GB",
-            "Battery": "Model 5000mAh - Li-Ion"
-          }
-        },
-        {
-          "model": "Samsung Galaxy A32",
-          "components": {
-            "CPU": "Mediatek Helio G80",
-            "RAM": "LPDDR4X 4GB",
-            "Storage": "eMMC 5.1 128GB",
-            "Battery": "Model 5000mAh - Li-Po"
-          }
-        },
-        {
-          "model": "Samsung Galaxy Z Fold 3",
-          "components": {
-            "CPU": "Snapdragon 888",
-            "RAM": "LPDDR5 12GB",
-            "Storage": "UFS 3.1 256GB",
-            "Battery": "Model 4400mAh - Li-Ion"
-          }
-        },
-        {
-          "model": "Samsung Galaxy Note 20",
-          "components": {
-            "CPU": "Exynos 990",
-            "RAM": "LPDDR5 8GB",
-            "Storage": "UFS 3.0 256GB",
-            "Battery": "Model 4300mAh - Li-Ion"
-          }
-        },
-        {
-          "model": "Samsung Galaxy A02s",
-          "components": {
-            "CPU": "Snapdragon 450",
-            "RAM": "LPDDR3 3GB",
-            "Storage": "eMMC 5.1 32GB",
-            "Battery": "Model 5000mAh - Li-Ion"
-          }
-        }
-      ]
-    },
-    {
-      "brand": "Apple",
-      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png",
-      "models": [
-        {
-          "model": "iPhone 13 Pro Max",
-          "components": {
-            "CPU": "A15 Bionic",
-            "RAM": "LPDDR5X 6GB",
-            "Storage": "NVMe 128GB",
-            "Battery": "Model 4352mAh - Li-Ion"
-          }
-        },
-        {
-          "model": "iPhone SE (2020)",
-          "components": {
-            "CPU": "A13 Bionic",
-            "RAM": "LPDDR4 3GB",
-            "Storage": "NVMe 64GB",
-            "Battery": "Model 1821mAh - Li-Ion"
-          }
-        },
-        {
-          "model": "iPhone 12 mini",
-          "components": {
-            "CPU": "A14 Bionic",
-            "RAM": "LPDDR4X 4GB",
-            "Storage": "NVMe 64GB",
-            "Battery": "Model 2227mAh - Li-Ion"
-          }
-        },
-        {
-          "model": "iPhone XR",
-          "components": {
-            "CPU": "A12 Bionic",
-            "RAM": "LPDDR4X 3GB",
-            "Storage": "NVMe 64GB",
-            "Battery": "Model 2942mAh - Li-Ion"
-          }
-        },
-        {
-          "model": "iPhone 11 Pro",
-          "components": {
-            "CPU": "A13 Bionic",
-            "RAM": "LPDDR4X 4GB",
-            "Storage": "NVMe 64GB",
-            "Battery": "Model 3046mAh - Li-Ion"
-          }
-        }
-      ]
-    },
-    {
-      "brand": "Xiaomi",
-      "logo_url": "https://1000marcas.net/wp-content/uploads/2019/12/Xiaomi-Logo.png",
-      "models": [
-        {
-          "model": "Xiaomi Mi 11 Ultra",
-          "components": {
-            "CPU": "Snapdragon 888",
-            "RAM": "LPDDR5 12GB",
-            "Storage": "UFS 3.1 256GB",
-            "Battery": "Model 5000mAh - Li-Po"
-          }
-        },
-        {
-          "model": "Xiaomi Redmi Note 11 Pro",
-          "components": {
-            "CPU": "Mediatek Dimensity 920",
-            "RAM": "LPDDR4X 6GB",
-            "Storage": "UFS 3.1 128GB",
-            "Battery": "Model 5000mAh - Li-Po"
-          }
-        },
-        {
-          "model": "Xiaomi Poco X3 NFC",
-          "components": {
-            "CPU": "Snapdragon 732G",
-            "RAM": "LPDDR4X 6GB",
-            "Storage": "UFS 2.1 128GB",
-            "Battery": "Model 5160mAh - Li-Po"
-          }
-        },
-        {
-          "model": "Xiaomi Mi Mix Fold",
-          "components": {
-            "CPU": "Snapdragon 888",
-            "RAM": "LPDDR5 12GB",
-            "Storage": "UFS 3.1 256GB",
-            "Battery": "Model 5020mAh - Li-Po"
-          }
-        },
-        {
-          "model": "Xiaomi Mi 10T Lite",
-          "components": {
-            "CPU": "Snapdragon 750G",
-            "RAM": "LPDDR4X 6GB",
-            "Storage": "UFS 2.2 128GB",
-            "Battery": "Model 4820mAh - Li-Po"
-          }
-        }
-      ]
-    },
-    {
-      "brand": "Huawei",
-      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Huawei_logo_icon_170010.png",
-      "models": [
-        {
-          "model": "Huawei P50 Pro",
-          "components": {
-            "CPU": "Snapdragon 888",
-            "RAM": "LPDDR5 8GB",
-            "Storage": "UFS 3.1 256GB",
-            "Battery": "Model 4360mAh - Li-Po"
-          }
-        },
-        {
-          "model": "Huawei Mate 40 Pro",
-          "components": {
-            "CPU": "Kirin 9000",
-            "RAM": "LPDDR5 8GB",
-            "Storage": "UFS 3.1 256GB",
-            "Battery": "Model 4400mAh - Li-Po"
-          }
-        },
-        {
-          "model": "Huawei Nova 8 Pro",
-          "components": {
-            "CPU": "Kirin 985",
-            "RAM": "LPDDR4X 8GB",
-            "Storage": "UFS 2.1 128GB",
-            "Battery": "Model 4000mAh - Li-Po"
-          }
-        },
-        {
-          "model": "Huawei P40 Lite",
-          "components": {
-            "CPU": "Kirin 810",
-            "RAM": "LPDDR4X 6GB",
-            "Storage": "UFS 2.1 128GB",
-            "Battery": "Model 4200mAh - Li-Po"
-          }
-        },
-        {
-          "model": "Huawei Y9a",
-          "components": {
-            "CPU": "Mediatek Helio G80",
-            "RAM": "LPDDR4X 6GB",
-            "Storage": "UFS 2.1 128GB",
-            "Battery": "Model 4200mAh - Li-Po"
-          }
-        }
-      ]
-    }
+      {
+          "brand": "samsung",
+          "logo_url": "https://turbologo.com/articles/wp-content/uploads/2019/07/samsung-logo-1993.jpg.webp",
+          "models": [
+              {
+                  "model": "samsung galaxy s21 ultra",
+                  "components": {
+                      "cpu": "exynos 2100",
+                      "ram": "lpddr5 12gb",
+                      "storage": "ufs 3.1 128gb",
+                      "battery": "model 5000mah - li-ion"
+                  },
+                  "image_url": "https://falabella.scene7.com/is/image/FalabellaPE/gsc_122290750_3307681_1?wid=800&hei=800&qlt=70"
+              },
+              {
+                  "model": "samsung galaxy a32",
+                  "components": {
+                      "cpu": "mediatek helio g80",
+                      "ram": "lpddr4x 4gb",
+                      "storage": "emmc 5.1 128gb",
+                      "battery": "model 5000mah - li-po"
+                  },
+                  "image_url": "https://falabella.scene7.com/is/image/FalabellaPE/gsc_122290846_3307731_1?wid=800&hei=800&qlt=70"
+              },
+              {
+                  "model": "samsung galaxy z fold 3",
+                  "components": {
+                      "cpu": "snapdragon 888",
+                      "ram": "lpddr5 12gb",
+                      "storage": "ufs 3.1 256gb",
+                      "battery": "model 4400mah - li-ion"
+                  },
+                  "image_url": "https://multicelperu.com/portal/wp-content/uploads/2022/06/samsung-z-fold-3-f926b-5g-dual-sim-12gb-256gb-negro.jpg"
+              },
+              {
+                  "model": "samsung galaxy note 20",
+                  "components": {
+                      "cpu": "exynos 990",
+                      "ram": "lpddr5 8gb",
+                      "storage": "ufs 3.0 256gb",
+                      "battery": "model 4300mah - li-ion"
+                  },
+                  "image_url": "https://falabella.scene7.com/is/image/FalabellaPE/122290839_1?wid=800&hei=800&qlt=70"
+              },
+              {
+                  "model": "samsung galaxy a02",
+                  "components": {
+                      "cpu": "snapdragon 450",
+                      "ram": "lpddr3 3gb",
+                      "storage": "emmc 5.1 32gb",
+                      "battery": "model 5000mah - li-ion"
+                  },
+                  "image_url": "https://images-cdn.ubuy.co.in/EASPV86-samsung-galaxy-a02-sm-a022m-ds-dual.jpg"
+              }
+          ]
+      },
+      {
+          "brand": "apple",
+          "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/640px-Apple_logo_black.svg.png",
+          "models": [
+              {
+                  "model": "iphone 13 pro max",
+                  "components": {
+                      "cpu": "a15 bionic",
+                      "ram": "lpddr5x 6gb",
+                      "storage": "nvme 128gb",
+                      "battery": "model 4352mah - li-ion"
+                  },
+                  "image_url": "https://falabella.scene7.com/is/image/FalabellaPE/gsc_121411080_3024814_1?wid=800&hei=800&qlt=70"
+              },
+              {
+                  "model": "iphone se (2020)",
+                  "components": {
+                      "cpu": "a13 bionic",
+                      "ram": "lpddr4 3gb",
+                      "storage": "nvme 64gb",
+                      "battery": "model 1821mah - li-ion"
+                  },
+                  "image_url": "https://www.lacuracao.pe/media/catalog/product/p/s/ps24141114_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+              },
+              {
+                  "model": "iphone 12 mini",
+                  "components": {
+                      "cpu": "a14 bionic",
+                      "ram": "lpddr4x 4gb",
+                      "storage": "nvme 64gb",
+                      "battery": "model 2227mah - li-ion"
+                  },
+                  "image_url": "https://oechsle.vteximg.com.br/arquivos/ids/4773044-1000-1000/image-54487df9204c44888a307db82257bf0f.jpg?v=637661482118470000"
+              },
+              {
+                  "model": "iphone xr",
+                  "components": {
+                      "cpu": "a12 bionic",
+                      "ram": "lpddr4x 3gb",
+                      "storage": "nvme 64gb",
+                      "battery": "model 2942mah - li-ion"
+                  },
+                  "image_url": "https://peru-smart.com/wp-content/uploads/2023/08/CELR001BLANCO-64GB.jpg"
+              },
+              {
+                  "model": "iphone 11 pro",
+                  "components": {
+                      "cpu": "a13 bionic",
+                      "ram": "lpddr4x 4gb",
+                      "storage": "nvme 64gb",
+                      "battery": "model 3046mah - li-ion"
+                  },
+                  "image_url": "https://http2.mlstatic.com/D_NQ_NP_758738-MLA32445499625_102019-O.webp"
+              }
+          ]
+      },
+      {
+          "brand": "xiaomi",
+          "logo_url": "https://pbs.twimg.com/profile_images/1384895293716586500/rV2Yyaag_400x400.jpg",
+          "models": [
+              {
+                  "model": "xiaomi mi 11 ultra",
+                  "components": {
+                      "cpu": "snapdragon 888",
+                      "ram": "lpddr5 12gb",
+                      "storage": "ufs 3.1 256gb",
+                      "battery": "model 5000mah - li-po"
+                  },
+                  "image_url": "https://images.unsplash.com/photo-1619410766515-6263877c7bfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNzAxMTB8MHwxfHNlYXJjaHwxfHx4aWFvbWklMjBtaSUyMDExJTIwdWx0cmF8ZW58MHx8fHwxNzE1NjU4NDI1fDA&ixlib=rb-4.0.3&q=80&w=1080"
+              },
+              {
+                  "model": "xiaomi redmi note 11 pro",
+                  "components": {
+                      "cpu": "mediatek dimensity 920",
+                      "ram": "lpddr4x 6gb",
+                      "storage": "ufs 3.1 128gb",
+                      "battery": "model 5000mah - li-po"
+                  },
+                  "image_url": "https://images.unsplash.com/photo-1536546025187-bad5bfc86628?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNzAxMTB8MHwxfHNlYXJjaHwxfHx4aWFvbWklMjByZWRtaSUyMG5vdGUlMjAxMSUyMHByb3xlbnwwfHx8fDE3MTU2NTg0MjV8MA&ixlib=rb-4.0.3&q=80&w=1080"
+              },
+              {
+                  "model": "xiaomi poco x3 nfc",
+                  "components": {
+                      "cpu": "snapdragon 732g",
+                      "ram": "lpddr4x 6gb",
+                      "storage": "ufs 2.1 128gb",
+                      "battery": "model 5160mah - li-po"
+                  },
+                  "image_url": "https://images.unsplash.com/photo-1661268277249-38f133ba09c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNzAxMTB8MHwxfHNlYXJjaHwxfHx4aWFvbWklMjBwb2NvJTIweDMlMjBuZmN8ZW58MHx8fHwxNzE1NjU4NDI1fDA&ixlib=rb-4.0.3&q=80&w=1080"
+              },
+              {
+                  "model": "xiaomi mi mix fold",
+                  "components": {
+                      "cpu": "snapdragon 888",
+                      "ram": "lpddr5 12gb",
+                      "storage": "ufs 3.1 256gb",
+                      "battery": "model 5020mah - li-po"
+                  },
+                  "image_url": "https://images.unsplash.com/photo-1694972343525-ea7309e504ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNzAxMTB8MHwxfHNlYXJjaHwxfHx4aWFvbWklMjBtaSUyMG1peCUyMGZvbGR8ZW58MHx8fHwxNzE1NjU4NDI1fDA&ixlib=rb-4.0.3&q=80&w=1080"
+              },
+              {
+                  "model": "xiaomi mi 10t lite",
+                  "components": {
+                      "cpu": "snapdragon 750g",
+                      "ram": "lpddr4x 6gb",
+                      "storage": "ufs 2.2 128gb",
+                      "battery": "model 4820mah - li-po"
+                  },
+                  "image_url": "https://images.unsplash.com/photo-1694972343525-ea7309e504ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNzAxMTB8MHwxfHNlYXJjaHwxfHx4aWFvbWklMjBtaSUyMDEwdCUyMGxpdGV8ZW58MHx8fHwxNzE1NjU4NDI2fDA&ixlib=rb-4.0.3&q=80&w=1080"
+              }
+          ]
+      },
+      {
+          "brand": "huawei",
+          "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Huawei_Standard_logo.svg/1200px-Huawei_Standard_logo.svg.png",
+          "models": [
+              {
+                  "model": "huawei p50 pro",
+                  "components": {
+                      "cpu": "snapdragon 888",
+                      "ram": "lpddr5 8gb",
+                      "storage": "ufs 3.1 256gb",
+                      "battery": "model 4360mah - li-po"
+                  },
+                  "image_url": "https://images.unsplash.com/photo-1591884539376-42f1f0dc65c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNzAxMTB8MHwxfHNlYXJjaHwxfHxodWF3ZWklMjBwNTAlMjBwcm98ZW58MHx8fHwxNzE1NjU4NDI2fDA&ixlib=rb-4.0.3&q=80&w=1080"
+              },
+              {
+                  "model": "huawei mate 40 pro",
+                  "components": {
+                      "cpu": "kirin 9000",
+                      "ram": "lpddr5 8gb",
+                      "storage": "ufs 3.1 256gb",
+                      "battery": "model 4400mah - li-po"
+                  },
+                  "image_url": "https://images.unsplash.com/photo-1612519348055-5948319a0714?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNzAxMTB8MHwxfHNlYXJjaHwxfHxodWF3ZWklMjBtYXRlJTIwNDAlMjBwcm98ZW58MHx8fHwxNzE1NjU4NDI2fDA&ixlib=rb-4.0.3&q=80&w=1080"
+              },
+              {
+                  "model": "huawei nova 8 pro",
+                  "components": {
+                      "cpu": "kirin 985",
+                      "ram": "lpddr4x 8gb",
+                      "storage": "ufs 2.1 128gb",
+                      "battery": "model 4000mah - li-po"
+                  },
+                  "image_url": "https://images.unsplash.com/photo-1713132508366-3dea89dc0c8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNzAxMTB8MHwxfHNlYXJjaHwxfHxodWF3ZWklMjBub3ZhJTIwOCUyMHByb3xlbnwwfHx8fDE3MTU2NTg0Mjd8MA&ixlib=rb-4.0.3&q=80&w=1080"
+              },
+              {
+                  "model": "huawei p40 lite",
+                  "components": {
+                      "cpu": "kirin 810",
+                      "ram": "lpddr4x 6gb",
+                      "storage": "ufs 2.1 128gb",
+                      "battery": "model 4200mah - li-po"
+                  },
+                  "image_url": "https://images.unsplash.com/photo-1509576931792-214960705f8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNzAxMTB8MHwxfHNlYXJjaHwxfHxodWF3ZWklMjBwNDAlMjBsaXRlfGVufDB8fHx8MTcxNTY1ODQyN3ww&ixlib=rb-4.0.3&q=80&w=1080"
+              },
+              {
+                  "model": "huawei y9a",
+                  "components": {
+                      "cpu": "mediatek helio g80",
+                      "ram": "lpddr4x 6gb",
+                      "storage": "ufs 2.1 128gb",
+                      "battery": "model 4200mah - li-po"
+                  },
+                  "image_url": "https://images.unsplash.com/photo-1713132508366-3dea89dc0c8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNzAxMTB8MHwxfHNlYXJjaHwxfHxodWF3ZWklMjB5OWF8ZW58MHx8fHwxNzE1NjU4NDI3fDA&ixlib=rb-4.0.3&q=80&w=1080"
+              }
+          ]
+      }
   ]
 }

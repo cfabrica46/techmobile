@@ -1,32 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Cargar la información del archivo JSON
     fetch('../data/database.json')
         .then(response => response.json())
         .then(data => {
-            // Obtener el elemento del carrusel
             const carousel = document.querySelector('.carousel');
             
-            // Crear slides para cada marca y mostrar los logos
             data.inventory.forEach(brand => {
                 const slide = document.createElement('div');
                 slide.classList.add('slide');
+                const link = document.createElement('a');
+                link.href = `pages/models.html?brand=${encodeURIComponent(brand.brand)}`;
                 const img = document.createElement('img');
                 img.src = brand.logo_url;
                 img.alt = brand.brand;
                 img.classList.add('carousel-image');
-                slide.appendChild(img);
+                link.appendChild(img);
+                slide.appendChild(link);
                 carousel.appendChild(slide);
             });
             
-            // Inicializar el carrusel
             changeSlide(0);
         })
         .catch(error => console.error('Error al cargar el archivo JSON:', error));
-
 });
 
 
-// Función para cambiar el slide del carrusel
 let slideIndex = 0;
 function changeSlide(direction) {
     const slides = document.querySelectorAll('.slide');
