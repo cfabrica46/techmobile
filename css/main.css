@@ -323,3 +323,19 @@ footer {
     background-color: #371a6f; /* Color de fondo al pasar el ratón */
     transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
 }
+
+@media (max-width: 720px){
+    .title-index{
+        font-size: 50px !important;
+    }
+}
+
+@media (max-width: 600px){
+    .title-index{
+        font-size: 30px !important;
+    }
+
+    .logo{
+        width: 60px;
+    }
+}
