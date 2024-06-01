@@ -1,9 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('/data/database.json')
+    fetch('/data/inventory.json')
         .then(response => response.json())
         .then(data => {
-            console.log('Usuarios:', data.users);
-            console.log('Inventario:', data.inventory);
+            console.log('Inventario:', data);
+
+        })
+        .catch(error => console.error('Error al cargar los datos:', error));
+
+    fetch('/data/users.json')
+        .then(response => response.json())
+        .then(data => {
+            console.log('Usuarios:', data);
 
         })
         .catch(error => console.error('Error al cargar los datos:', error));

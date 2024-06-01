@@ -1,0 +1,14 @@
+#cart-items {
+    margin: 20px 0;
+}
+
+#cart-items .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#checkout {
+    display: block;
+    margin: auto;
+}

@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('../data/database.json')
+    fetch('../data/inventory.json')
         .then(response => response.json())
         .then(data => {
             const carousel = document.querySelector('.carousel');
             
-            data.inventory.forEach(brand => {
+            data.forEach(brand => {
                 const slide = document.createElement('div');
                 slide.classList.add('slide');
                 const link = document.createElement('a');

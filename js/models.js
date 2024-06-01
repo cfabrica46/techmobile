@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Aplicar clase específica para la marca activa
     body.classList.add(`brand-${brandName.toLowerCase()}`);
 
-    fetch('../data/database.json')
+    fetch('../data/inventory.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', function() {
             return response.json();
         })
         .then(data => {
-            if (!data || !data.inventory) {
+            if (!data) {
                 console.error('Invalid JSON structure:', data);
                 modelsContainer.innerHTML = '<p>Invalid JSON structure.</p>';
                 return;
             }
 
-            const brand = data.inventory.find(b => b.brand.toLowerCase() === brandName.toLowerCase());
+            const brand = data.find(b => b.brand.toLowerCase() === brandName.toLowerCase());
             if (brand) {
                 brand.models.forEach(model => {
                     console.log("MODEL:",model)
