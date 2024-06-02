@@ -339,3 +339,23 @@ footer {
         width: 60px;
     }
 }
+
+/* Estilos para el distintivo de usuario logueado */
+#userMenu .user-welcome {
+    color: #4B0082;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#userMenu .logout-button {
+    color: #4B0082;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-left: 10px;
+}
+
+#userMenu .logout-button:hover {
+    color: yellow;
+}

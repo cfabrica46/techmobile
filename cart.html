@@ -4,16 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart - TechMobile</title>
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
-    <main>
-        <h1>Cart</h1>
-        <div id="cart-items">
-            <!-- Cart items will be displayed here -->
+    <header>
+        <div class="container-title">
+            <h1 class="title-index">TechMobile</h1>
+            <img class="logo" src="https://img.freepik.com/vector-premium/smartphone-logo-comunicacion-electronica-vector-diseno-telefono-moderno-simbolo-marca-empresa_638875-2350.jpg">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
         </div>
-        <button id="checkout">Checkout</button>
+    </header>
+    <main>
+        <h1 class="welcome-message">Cart</h1>
+        <div class="cart-container">
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <button id="checkout" class="checkout-button">Checkout</button>
+        </div>
     </main>
+    <footer>
+        <div class="footer-info">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Av San Luis, Lima, Peru</p>
+                <p><i class="fas fa-phone"></i> +51 938 536 234</p>
+                <p><i class="fas fa-envelope"></i> techmobile@company.pe</p>
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <p><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> Facebook</a></p>
+                <p><a href="https://x.com/home?lang=es/"><i class="fab fa-twitter"></i> Twitter</a></p>
+                <p><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a></p>
+                <p><a href="https://www.linkedin.com/company/techmobile-it-solutions/"><i class="fab fa-linkedin-in"></i> LinkedIn</a></p>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <p><a href="about-us.html">About Us</a></p>
+                <p><a href="products.html">Products</a></p>
+                <p><a href="services.html">Services</a></p>
+                <p><a href="contact-us.html">Contact Us</a></p>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form>
+                    <input type="email" name="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 TechMobile. All rights reserved.</p>
+        </div>
+    </footer>
+    <a href="chatbot.html" id="chatbot-float-btn">
+        <i class="fas fa-comments"></i>
+    </a>
     <script src="js/cart.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-.login-container {
+.register-container {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
@@ -7,22 +7,22 @@
     border-radius: 8px;
 }
 
-.login-form {
+.register-form {
     display: flex;
     flex-direction: column;
 }
 
-.login-form label, .login-form input, .login-button {
+.register-form label, .register-form input, .register-button {
     margin-bottom: 15px;
 }
 
-.login-form input {
+.register-form input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-.login-button {
+.register-button {
     padding: 10px;
     background-color: #4B0082;
     color: white;
@@ -32,25 +32,11 @@
     font-size: 16px;
 }
 
-.login-button:hover {
+.register-button:hover {
     background-color: #371a6f;
 }
 
-.login-message {
+.register-message {
     color: red;
     text-align: center;
-}
-
-.register-message {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.register-message a {
-    color: #4B0082;
-    text-decoration: none;
-}
-
-.register-message a:hover {
-    text-decoration: underline;
 }
