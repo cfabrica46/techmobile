@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart - TechMobile</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/cart.css">
+    <title>Marca - TechMobile</title>
+    <link rel="stylesheet" href="./css/models.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="brand-page">
     <header>
         <div class="container-title">
             <h1 class="title-index">TechMobile</h1>
@@ -26,9 +25,8 @@
         </div>
     </header>
     <main>
-        <h1 class="welcome-message">Cart</h1>
-        <div id="cart-items" class="cart-items"></div>
-        <button id="checkout" class="checkout-button">Checkout</button>
+        <h2 class="title-model">Modelos de <span id="brand-name"></span></h2>
+        <div id="models-container" class="models-container"></div>
     </main>
     <footer>
         <div class="footer-info">
@@ -64,7 +62,12 @@
             <p>&copy; 2024 TechMobile. All rights reserved.</p>
         </div>
     </footer>
+    <!-- Botón flotante para ChatBot -->
+    <a href="chatbot.html" id="chatbot-float-btn">
+        <i class="fas fa-comments"></i>
+    </a>
 
-    <script src="js/cart.js"></script>
+    <script src="./js/models.js"></script>
+    <script src="./js/cart.js"></script>
 </body>
 </html>

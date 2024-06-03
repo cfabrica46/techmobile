@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const slide = document.createElement('div');
                 slide.classList.add('slide');
                 const link = document.createElement('a');
-                link.href = `pages/models.html?brand=${encodeURIComponent(brand.brand)}`;
+                link.href = `models.html?brand=${encodeURIComponent(brand.brand)}`;
                 const img = document.createElement('img');
                 img.src = brand.logo_url;
                 img.alt = brand.brand;

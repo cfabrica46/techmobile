@@ -7,27 +7,109 @@ body {
     color: #333;
 }
 
-.header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* head */
+header {
+    background-color: #D3B8FF; /* Color de fondo morado claro */
     padding: 20px;
-    position: relative;
-    text-align: center;
+    text-align: center; /* Centra el contenido */
+    position: relative; /* Permite posicionar los iconos absolutamente */
 }
 
-.header-container h1 {
-    flex: 1;
-    font-family: Arial, sans-serif;
-    font-size: 48px; /* Tamaño del título */
+.container-title {
+    display: flex; /* Utiliza flexbox para colocar el título y el logo lado a lado */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    position: relative; /* Permite posicionar los iconos absolutamente */
+}
+
+.title-index {
+    color: #4B0082; /* Color del título */
+    font-family: Arial, sans-serif; /* Fuente del título */
+    font-size: 70px; /* Tamaño del título */
+    margin: 0; /* Quita el margen del título */
+}
+
+.logo {
+    width: 100px; /* Ancho del logo */
+    height: auto; /* Altura ajustada automáticamente */
+    margin-left: 10px; /* Espacio entre el título y el logo */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
+    position: absolute; /* Posición absoluta para los iconos */
+    top: 50%; /* Coloca los iconos en la mitad superior del header */
+    right: 20px; /* Margen derecho para los iconos */
+    transform: translateY(-50%); /* Centra verticalmente los iconos */
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 10px; /* Espacio entre los iconos */
+}
+
+.home-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Posición absoluta para los iconos */
+    top: 50%; /* Coloca los iconos en la mitad superior del header */
+    left: 20px; /* Margen derecho para los iconos */
+    right: unset;
+    transform: translateY(-50%); /* Centra verticalmente los iconos */
+}
+
+ul li a {
+    color: #4B0082; /* Color de los iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+    text-decoration: none;
+    transition: color 0.3s; /* Transición en el cambio de color */
+}
+
+ul li a:hover {
+    color: yellow;
 }
 
 .home-icon {
-    position: absolute;
-    left: 50px;
-    font-size: 24px;
+    color: #4B0082; /* Color de los iconos */
+    font-size: 24px; /* Tamaño de los iconos */
     text-decoration: none;
+    transition: color 0.3s; /* Transición en el cambio de color */
+    left: 30px;
+}
+
+.home-icon:hover {
+    color: yellow;
+}
+
+/* Barra de navegación */
+
+.nav-links {
+    top: 20px;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #4B0082; /* Color del texto blanco */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: yellow; /* Color de texto al hacer hover */
 }
 
 .models-container {
@@ -65,6 +147,23 @@ body {
     margin: 5px 0;
 }
 
+/* Estilos para el botón "Agregar al carrito" */
+.add-to-cart {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: #371a6f;
+}
+
 /* Estilos específicos para cada marca */
 .brand-page.brand-samsung header,
 .brand-page.brand-samsung footer {
@@ -72,7 +171,7 @@ body {
     color: #1428a0;
 }
 
-.brand-page.brand-samsung h1 {
+.brand-page.brand-samsung .title-model {
     color: #1428a0; /* Azul Samsung */
 }
 
@@ -91,7 +190,7 @@ body {
     color: #000;
 }
 
-.brand-page.brand-apple h1 {
+.brand-page.brand-apple .title-model {
     color: #000; /* Negro Apple */
 }
 
@@ -110,7 +209,7 @@ body {
     color: #ff6900;
 }
 
-.brand-page.brand-xiaomi h1 {
+.brand-page.brand-xiaomi .title-model {
     color: #ff6900; /* Naranja Xiaomi */
 }
 
@@ -129,7 +228,7 @@ body {
     color: #d82a26;
 }
 
-.brand-page.brand-huawei h1 {
+.brand-page.brand-huawei .title-model {
     color: #d82a26; /* Rojo Huawei */
 }
 
@@ -223,23 +322,99 @@ footer {
     background-color: #f90;
 }
 
-.logo {
-    width: 80px; /* Ancho del logo */
-    height: auto; /* Altura ajustada automáticamente */
-    margin-left: 10px; /* Espacio entre el título y el logo */
-    position: absolute;
-    display: inline-block;
-    right: 30px;
+/* Chatbot button styles */
+#chatbot-float-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+#chatbot-float-btn:hover {
+    background-color: #371a6f;
+    transform: scale(1.1);
 }
 
 @media (max-width: 720px){
-    .title-model{
+    .title-index{
+        font-size: 50px !important;
+    }
+    .title-model {
         font-size: 30px !important;
     }
 }
 
-@media (max-width: 535px){
-    .title-model{
-        font-size: 15px !important;
+@media (max-width: 600px){
+    .title-index{
+        font-size: 30px !important;
     }
+
+    .logo{
+        width: 60px;
+    }
+    .title-model {
+        font-size: 20px !important;
+    }
+}
+
+.add-to-cart, .remove-from-cart {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart:hover, .remove-from-cart:hover {
+    background-color: #371a6f;
+}
+
+
+/* Centrar el subtítulo */
+.title-model {
+    text-align: center;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 14px;
+    vertical-align: super;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@keyframes fly-to-cart {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.5);
+    }
+}
+
+.fly-to-cart {
+    position: absolute;
+    z-index: 1000;
+    animation: fly-to-cart 1s forwards;
 }

@@ -1,0 +1,54 @@
+.receipt-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.receipt-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.receipt-item:last-child {
+    border-bottom: none;
+}
+
+.receipt-item .item-info {
+    display: flex;
+    align-items: center;
+}
+
+.receipt-item .item-info img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.receipt-item .item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.receipt-item .item-details h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.receipt-item .item-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.receipt-summary {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+}
